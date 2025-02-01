@@ -1,4 +1,6 @@
 /* eslint-disable no-unused-vars */
+/* eslint no-underscore-dangle: 0 */
+
 class NotesHandler {
   constructor(service, validator) {
     this._service = service;
