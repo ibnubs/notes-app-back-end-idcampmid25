@@ -1,8 +1,6 @@
 /* eslint-disable no-unused-vars */
 /* eslint no-underscore-dangle: 0 */
 
-const ClientError = require('../../exceptions/ClientError');
-
 class AuthenticationsHandler {
   constructor(authenticationsService, usersService, tokenManager, validator) {
     this._authenticationsService = authenticationsService;

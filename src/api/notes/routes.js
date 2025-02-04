@@ -2,7 +2,7 @@ const routes = (handler) => [
   {
     method: 'POST',
     path: '/notes',
-    handler: handler.postNoteHandler, // menerima dan simpan satu note
+    handler: handler.postNoteHandler,
     options: {
       auth: 'notesapp_jwt',
     },
@@ -10,7 +10,7 @@ const routes = (handler) => [
   {
     method: 'GET',
     path: '/notes',
-    handler: handler.getNotesHandler, // mengembalikan "banyak note"
+    handler: handler.getNotesHandler,
     options: {
       auth: 'notesapp_jwt',
     },
@@ -18,7 +18,7 @@ const routes = (handler) => [
   {
     method: 'GET',
     path: '/notes/{id}',
-    handler: handler.getNoteByIdHandler, // mengembalikan "satu note"
+    handler: handler.getNoteByIdHandler,
     options: {
       auth: 'notesapp_jwt',
     },
@@ -26,7 +26,7 @@ const routes = (handler) => [
   {
     method: 'PUT',
     path: '/notes/{id}',
-    handler: handler.putNoteByIdHandler, // menerima dan mengubah satu note
+    handler: handler.putNoteByIdHandler,
     options: {
       auth: 'notesapp_jwt',
     },
@@ -34,7 +34,7 @@ const routes = (handler) => [
   {
     method: 'DELETE',
     path: '/notes/{id}',
-    handler: handler.deleteNoteByIdHandler, // menghapus satu note
+    handler: handler.deleteNoteByIdHandler,
     options: {
       auth: 'notesapp_jwt',
     },
